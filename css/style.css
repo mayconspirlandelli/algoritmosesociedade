@@ -4,9 +4,10 @@ body {
 
 .nav-custom {
     font-family: 'Montserrat', sans-serif; /* Define a fonte */
-    font-size: 24px; /* Define o tamanho da fonte */
-    font-weight: 600; /* Semibold */
+    font-size: 18px; /* Define o tamanho da fonte */
     color: #003f5c;
     font-weight: bold;
     background-color: #ffffff;
   }
+
+
