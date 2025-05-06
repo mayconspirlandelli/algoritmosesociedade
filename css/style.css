@@ -1,0 +1,12 @@
+body {
+    background-color: #faf9f4;
+}
+
+.nav-custom {
+    font-family: 'Montserrat', sans-serif; /* Define a fonte */
+    font-size: 24px; /* Define o tamanho da fonte */
+    font-weight: 600; /* Semibold */
+    color: #003f5c;
+    font-weight: bold;
+    background-color: #ffffff;
+  }
