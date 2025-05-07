@@ -11,12 +11,44 @@ body {
   }
 
 
-.apresentacao h4 {
+.apresentacao h3, h4, h5 {
    text-align: center;
+    color: #003f5c;
 }
 
 .apresentacao p {
     text-align: justify;
     font-size: 18px;
     color: #003f5c;
+}
+
+
+.palestrantes {
+    background-color: #faf9f4;
+    color: #003f5c;
+    padding: 60px 0;
+    text-align: justify;
+    font-size: 18px;
+}
+
+.inscricoes {
+    text-align: justify;
+    color: #003f5c;
+    font-size: 18px;
+    padding: 60px 0;
+    background-color: #b0ba93;
+}   
+
+.palestrantes {
+    text-align: justify;
+    color: #003f5c;
+    font-size: 18px;
+}
+
+.programacao {
+    text-align: justify;
+    background-color: #003f5c;
+    font-size: 18px;
+    color: #ffffff;
+    padding: 60px 0;
 }
