@@ -64,7 +64,7 @@
   }
 
   .palestrante-img {
-    height: 200px; /* defina a altura desejada */
+    height: 350px; /* defina a altura desejada */
     object-fit: cover; /* recorta para caber no espaço mantendo proporção */
     width: 100%; /* ocupa toda a largura do card */
   }
