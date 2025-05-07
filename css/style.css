@@ -11,3 +11,12 @@ body {
   }
 
 
+.apresentacao h4 {
+   text-align: center;
+}
+
+.apresentacao p {
+    text-align: justify;
+    font-size: 18px;
+    color: #003f5c;
+}
