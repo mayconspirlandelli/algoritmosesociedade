@@ -20,6 +20,25 @@
     document.getElementById("hours").innerText = String(hours).padStart(2, '0');
     document.getElementById("minutes").innerText = String(minutes).padStart(2, '0');
     document.getElementById("seconds").innerText = String(seconds).padStart(2, '0');
-  }, 1000);
+  }, 1000); 
+  // Fim da contagem regressiva
+  
+      
+// Funçao para  Mostrar ou esconder o botão ao rolar a página
+  const btnTopo = document.getElementById("btnTopo"); 
+  
+  window.onscroll = function () {
+    if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
+      btnTopo.classList.remove("d-none");
+    } else {
+      btnTopo.classList.add("d-none");
+    }
+  };
+
+  // Ir suavemente para o topo
+  function irParaTopo() {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  } 
+//Funçao para  Mostrar ou esconder o botão ao rolar a página
   
   
