@@ -68,4 +68,8 @@
     object-fit: cover; /* recorta para caber no espaço mantendo proporção */
     width: 100%; /* ocupa toda a largura do card */
   }
-  
+
+  .programacao li {
+    margin-bottom: 10px;
+    
+  }
