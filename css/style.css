@@ -1,54 +1,61 @@
-body {
-    background-color: #faf9f4;
-}
-
-.nav-custom {
-    font-family: 'Montserrat', sans-serif; /* Define a fonte */
-    font-size: 18px; /* Define o tamanho da fonte */
-    color: #003f5c;
-    font-weight: bold;
-    background-color: #ffffff;
+/* Cores e fonte principais */
+:root {
+    --cor-primaria: #003f5c;
+    --cor-secundaria: #faf9f4;
+    --cor-texto: #003f5c;
+    --cor-fundo-programacao: #003f5c;
+    --cor-fundo-claro: #faf9f4;
+    --cor-fundo-inscricoes: #b0ba93;
+    --cor-texto-invertido: #ffffff;
+    --fonte-principal: 'Montserrat', sans-serif;
   }
-
-
-.apresentacao h3, h4, h5 {
-   text-align: center;
-    color: #003f5c;
-}
-
-.apresentacao p {
-    text-align: justify;
+  
+  /* Estilos gerais */
+  body {
+    background-color: var(--cor-secundaria);
+    font-family: var(--fonte-principal);
+    color: var(--cor-texto);
     font-size: 18px;
-    color: #003f5c;
-}
-
-
-.palestrantes {
-    background-color: #faf9f4;
-    color: #003f5c;
+    text-align: justify;
+  }
+  
+  .nav-custom {
+    font-size: 18px;
+    font-weight: bold;
+    color: var(--cor-primaria);
+    background-color: var(--cor-texto-invertido);
+  }
+  
+  /* Centralização de títulos */
+  h3, h4, h5 {
+    text-align: center;
+    color: var(--cor-primaria);
+  }
+  
+  /* Seções com padding padrão */
+  section {
     padding: 60px 0;
-    text-align: justify;
+  }
+  
+  /* Seções específicas */
+  .apresentacao p,
+  .palestrantes,
+  .inscricoes,
+  .programacao {
     font-size: 18px;
-}
-
-.inscricoes {
-    text-align: justify;
-    color: #003f5c;
-    font-size: 18px;
-    padding: 60px 0;
-    background-color: #b0ba93;
-}   
-
-.palestrantes {
-    text-align: justify;
-    color: #003f5c;
-    font-size: 18px;
-}
-
-.programacao {
-    text-align: justify;
-    background-color: #003f5c;
-    font-size: 18px;
-    color: #ffffff;
-    padding: 60px 0;
-}
+  }
+  
+  /* Fundo e cor de texto por seção */
+  .palestrantes {
+    background-color: var(--cor-fundo-claro);
+  }
+  
+  .inscricoes {
+    background-color: var(--cor-fundo-inscricoes);
+  }
+  
+  .programacao {
+    background-color: var(--cor-fundo-programacao);
+    color: var(--cor-texto-invertido);
+  }
+  
