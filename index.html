@@ -152,12 +152,17 @@
                   <div class="card-body">
                     <img src="img/fotos/luiz-adriano.jpg" class="rounded mx-auto d-block palestrante-img" alt="Luiz Adriano Borges">
                     <h5 class="card-title mt-2">Luiz Adriano Borges</h5>
-                    <p class="card-text">Professor na UTFPR-Toledo, pesquisa as origens da cibernética como movimento transumanista.</p>
+                    
+                    <!-- Texto curto (resumo) -->
+                    <p class="card-text" id="resumoLuiz-adriano">Professor na UTFPR-Toledo, pesquisa as origens da cibernética como movimento transumanista.</p>
 
-                    <p class="card-text" id="luiz-adriano" style="display: none;">
+                    <!-- Texto completo (escondido por padrão) -->
+                    <p class="card-text" id="completoLuiz-adriano" style="display: none;">
                       Luiz Adriano Borges é professor na UTFPR-Toledo, ministrando disciplinas de História da Tecnologia e Filosofia da Tecnologia.  Pesquisa atualmente sobre as origens da cibernética como um movimento transumanista.
                     </p>
-                    <a href="#" class="text-primary" onclick="toggleTexto('luiz-adriano', this); return false;">[+]</a>
+
+                    <!-- Botão de alternância -->
+                    <a href="#" class="text-primary" onclick="alternarTexto('resumoLuiz-adriano', 'completoLuiz-adriano', this); return false;">[+]</a>
                   </div>
                 </div>
               </div>
@@ -165,8 +170,23 @@
                 <div class="card h-100">
                   <div class="card-body">
                     <img src="img/fotos/fernando-pasquini.jpg" class="rounded mx-auto d-block palestrante-img" alt="Fernando Pasquini Santos">
+                    <!-- <h5 class="card-title mt-2">Fernando Pasquini Santos</h5>
+                    <p class="card-text">Professor na Calvin University (EUA), pesquisa HCI, ciência de dados e filosofia da tecnologia. Palestra: Métricas de Equidade em AM.</p> -->
                     <h5 class="card-title mt-2">Fernando Pasquini Santos</h5>
-                    <p class="card-text">Professor na Calvin University (EUA), pesquisa HCI, ciência de dados e filosofia da tecnologia. Palestra: Métricas de Equidade em AM.</p>
+
+                    <!-- Texto curto (resumo) -->
+                    <p class="card-text" id="resumoFernando-pasquini">
+                      Professor na Calvin University (EUA), pesquisa HCI, ciência de dados e filosofia da tecnologia.
+                    </p>
+
+                    <!-- Texto completo (escondido por padrão) -->
+                    <p class="card-text" id="completoFernando-pasquini" style="display: none;">
+                      Professor na Calvin University (EUA), onde atua com foco em Interação Humano-Computador (HCI), ciência de dados e filosofia da tecnologia. Graduado em engenharia de computação e com doutorado em sistemas dinâmicos na Universidade de São Paulo. Sua pesquisa aborda questões éticas e políticas ligadas ao uso de tecnologias emergentes. No evento, apresenta a palestra “Métricas de Equidade em Aprendizado de Máquina e seus Fundamentos Éticos e Políticos”.
+                    </p>
+
+                    <!-- Botão de alternância -->
+                    <a href="#" class="text-primary" onclick="alternarTexto('resumoFernando-pasquini', 'completoFernando-pasquini', this); return false;">[+]</a>
+
                   </div>
                 </div>
               </div>
@@ -174,8 +194,23 @@
                 <div class="card h-100">
                   <div class="card-body">
                     <img src="img/fotos/henrique-araujo.jpg" class="rounded mx-auto d-block palestrante-img" alt="Henrique Araújo Costa">
+                    <!-- <h5 class="card-title mt-2">Henrique Araújo Costa</h5>
+                    <p class="card-text">Professor da UnB e coordenador no PPGD. Atua em Direito e Tecnologia.</p> -->
                     <h5 class="card-title mt-2">Henrique Araújo Costa</h5>
-                    <p class="card-text">Professor da UnB e coordenador no PPGD. Atua em Direito e Tecnologia.</p>
+
+                    <!-- Texto curto (resumo) -->
+                    <p class="card-text" id="resumoHenrique-costa">
+                      Professor da UnB e coordenador no PPGD. Atua em Direito e Tecnologia.
+                    </p>
+
+                    <!-- Texto completo (escondido por padrão) -->
+                    <p class="card-text" id="completoHenrique-costa" style="display: none;">
+                      Professor da Universidade de Brasília (UnB) e coordenador do Programa de Pós-Graduação em Direito (PPGD). Atua nas áreas de Direito e Tecnologia, com foco em regulação de algoritmos, proteção de dados e governança digital.
+                    </p>
+
+                    <!-- Botão de alternância -->
+                    <a href="#" class="text-primary" onclick="alternarTexto('resumoHenrique-costa', 'completoHenrique-costa', this); return false;">[+]</a>
+
                   </div>
                 </div>
               </div>
@@ -189,8 +224,21 @@
                 <div class="card h-100">
                   <div class="card-body">
                     <img src="img/fotos/ricardo-fabrino.jpg" class="rounded mx-auto d-block palestrante-img" alt="Ricardo Fabrino Mendonça">
+                    <!-- <h5 class="card-title mt-2">Ricardo Fabrino Mendonça</h5>
+                    <p class="card-text">Professor da UFMG. Pesquisa democracia, IA e comunicação política.</p> -->
                     <h5 class="card-title mt-2">Ricardo Fabrino Mendonça</h5>
-                    <p class="card-text">Professor da UFMG. Pesquisa democracia, IA e comunicação política.</p>
+                    <!-- Texto curto (resumo) -->
+                    <p class="card-text" id="resumoRicardo-fabrino">
+                      Professor da UFMG, atua em ciência política, com foco em democracia digital e regulação algorítmica.
+                    </p>
+
+                    <!-- Texto completo (escondido por padrão) -->
+                    <p class="card-text" id="completoRicardo-fabrino" style="display: none;">
+                      Professor Associado do Departamento de Ciência Política da UFMG. Bolsista de produtividade do CNPq (1D), coordena o Margem – Grupo de Pesquisa em Democracia e Justiça, integra o Comitê Gestor do INCT em Democracia Digital e preside a Comissão Permanente de Inteligência Artificial da UFMG. É também pesquisador associado ao Centre for Deliberative Democracy and Global Governance da Austrália. Tem interesse por Teoria Democrática, Políticas de Confronto e Comunicação e Política. É um dos autores de Algorithmic Institutionalism (Oxford University Press, 2023), ganhador do prêmio da ABCP de melhor livro em 2024. É um dos organizadores de Crises da Democracia e Esfera Pública (Editora UFMG, 2023) e de Research Methods in Deliberative Democracy (Oxford University Press, 2022), além de autor de vários artigos em periódicos como Science, Communications of the ACM, International Journal of Press/Politics, Policy & Society, Political Studies, European Political Science Review e Constellations.
+                    </p>
+
+                    <!-- Botão de alternância -->
+                    <a href="#" class="text-primary" onclick="alternarTexto('resumoRicardo-fabrino', 'completoRicardo-fabrino', this); return false;">[+]</a>
                   </div>
                 </div>
               </div>
@@ -198,8 +246,20 @@
                 <div class="card h-100">
                   <div class="card-body">
                     <img src="img/fotos/frederico-rocha.jpg" class="rounded mx-auto d-block palestrante-img" alt="Frederico Henrique Rocha">
-                    <h5 class="card-title mt-2">Frederico Henrique Rocha</h5>
-                    <p class="card-text">Professor da UFG. Atua em sociologia da educação e políticas públicas.</p>
+                    <h5 class="card-title mt-2">Frederico Henrique Rocha</h5>                    
+                    <!-- Texto curto (resumo) -->
+                    <p class="card-text" id="resumoFrederico-rocha">
+                      Professor da UFG. Professor da UFG. Atua em sociologia da educação e políticas públicas.
+                    </p>
+
+                    <!-- Texto completo (escondido por padrão) -->
+                    <p class="card-text" id="completoFrederico-rocha" style="display: none;">
+                      Professor de Sociologia e docente permanente do Programa de Pós-Graduação em Sociologia (PPGS) da Universidade Federal de Goiás (UFG), onde lidera o Projeto Politizar em parceria com a Câmara Municipal de Goiânia. Doutor em Sociologia pela UFG (2019), atua nas áreas de sociologia da educação e políticas públicas, integrando pesquisa, ensino, extensão e projetos de P&D.
+                    </p>
+
+                    <!-- Botão de alternância -->
+                    <a href="#" class="text-primary" onclick="alternarTexto('resumoFrederico-rocha', 'completoFrederico-rocha', this); return false;">[+]</a>
+
                   </div>
                 </div>
               </div>
@@ -208,7 +268,18 @@
                   <div class="card-body">
                     <img src="img/fotos/fernando-filgueiras.jpg" class=" rounded mx-auto d-block palestrante-img" alt="Fernando Filgueiras">
                     <h5 class="card-title mt-2">Fernando Filgueiras</h5>
-                    <p class="card-text">Professor da UFG. Diretor de Inovação no MEC. Pesquisa políticas públicas e IA.</p>
+                    <!-- Texto curto (resumo) -->
+                    <p class="card-text" id="resumoFernando-filgueiras">
+                      Professor na UFG e pesquisador do MEC. Atua em governança digital, transparência e inteligência artificial.
+                    </p>
+
+                    <!-- Texto completo (escondido por padrão) -->
+                    <p class="card-text" id="completoFernando-filgueiras" style="display: none;">
+                      Professor associado da Faculdade de Ciências Sociais da Universidade Federal de Goiás. Professor do Programa de Doutorado Profissional em Políticas Públicas da Escola Nacional de Administração Pública. Pesquisador do CNPq e do Ostrom Workshop on Political Theory and Policy Analysis, Indiana University. Atualmente ocupa a posição de Diretor de Inovação e Estudos Estratégicos do Ministério da Educação.Fernando Filgueiras é professor da Universidade Federal de Goiás (UFG) e pesquisador no Ministério da Educação (MEC). Doutor em Ciência Política, atua nas áreas de governança digital, transparência pública, accountability e os impactos sociais e políticos da inteligência artificial. Possui ampla experiência em políticas públicas e tem contribuído com pesquisas que analisam o uso de tecnologias na administração pública e seus desafios éticos.
+                    </p>
+
+                    <!-- Botão de alternância -->
+                    <a href="#" class="text-primary" onclick="alternarTexto('resumoFernando-filgueiras', 'completoFernando-filgueiras', this); return false;">[+]</a>
                   </div>
                 </div>
               </div>
@@ -223,7 +294,19 @@
                   <div class="card-body">
                     <img src="img/fotos/jacson-barbosa.jpg" class="rounded mx-auto d-block palestrante-img" alt="Jacson Rodrigues Barbosa">
                     <h5 class="card-title mt-2">Jacson Rodrigues Barbosa</h5>
-                    <p class="card-text">Professor do INF-UFG. Pesquisa engenharia de software e mineração de dados.</p>
+                    <!-- Texto curto (resumo) -->
+                    <p class="card-text" id="resumoJacson-barbosa">
+                      Professor no INF/UFG, pesquisa sistemas inteligentes, IA e tecnologias sociais.
+                    </p>
+
+                    <!-- Texto completo (escondido por padrão) -->
+                    <p class="card-text" id="completoJacson-barbosa" style="display: none;">
+                      Professor Adjunto do Instituto de Informática da Universidade Federal de Goiás (UFG), onde tem atuado como professor e pesquisador desde 2013. Bacharel em Ciência da Computação pela UFG (2007), mestre em  Ciências da Computação pelo INF - UFG (2011) e doutor em Ciências da Computação e Matemática Computacional pelo ICMC - Universidade de São Paulo (2021). Professor Jacson tem participado de alguns projetos de pesquisa nacionais financiado pela Fapesp. Sua pesquisa tem se focado nos seguintes temas: engenharia de software, mineração de repositório de software, aprendizado de máquina, mineração de dados e textos.
+                    </p>
+
+                    <!-- Botão de alternância -->
+                    <a href="#" class="text-primary" onclick="alternarTexto('resumoJacson-barbosa', 'completoJacson-barbosa', this); return false;">[+]</a>
+
                   </div>
                 </div>
               </div>
@@ -232,7 +315,19 @@
                   <div class="card-body">
                     <img src="img/fotos/fabio-costa.jpg" class="rounded mx-auto d-block palestrante-img" alt="Fábio M. Costa">
                     <h5 class="card-title mt-2">Fábio M. Costa</h5>
-                    <p class="card-text">Professor do INF-UFG. Atua em sistemas distribuídos e cibersegurança.</p>
+                    <!-- Texto curto (resumo) -->
+                    <p class="card-text" id="resumoFabio-costa">
+                      Professor titular no INF/UFG. Pesquisa sistemas distribuídos, cibersegurança e sistemas autoadaptativos.
+                    </p>
+
+                    <!-- Texto completo (escondido por padrão) -->
+                    <p class="card-text" id="completoFabio-costa" style="display: none;">
+                      Professor Titular no Instituto de Informática da UFG, onde atua desde 1995. Seus interesses de pesquisa incluem diferentes temáticas na área de Sistemas Distribuídos, com destaque para sistemas autoadaptativos, utility computing e cibersegurança, tendo atuado regularmente no comitê de programa de algumas das principais conferências na área. É orientador de mestrado e doutorado no Programa de Pós-Graduação em Ciência da Computação da UFG e membro da ACM. Fábio obteve o título de Doutor em Ciência da Computação pela Universidade de Lancaster em 2001, Mestre em Ciência da Computação pela UNICAMP, em 1995, e Bacharel em Ciência da Computação pela UFG, em 1992. Foi professor e pesquisador visitante na Florida International University, EUA (2011-2012), na Universidade de São Paulo (2015-2016) e na Universidade de Rennes, França (2018).
+                    </p>
+
+                    <!-- Botão de alternância -->
+                    <a href="#" class="text-primary" onclick="alternarTexto('resumoFabio-costa', 'completoFabio-costa', this); return false;">[+]</a>
+
                   </div>
                 </div>
               </div>
@@ -240,8 +335,21 @@
                 <div class="card h-100">
                   <div class="card-body">
                     <img src="img/fotos/elisangela-dias.jpg" class="rounded mx-auto d-block palestrante-img" alt="Elisangela Silva Dias">
-                    <h5 class="card-title mt-2">Elisângela Silva Dias</h5>
-                    <p class="card-text">Professora da UFG. Pesquisa algoritmos, gênero na computação e IA para políticas públicas.</p>
+                    <!-- <h5 class="card-title mt-2">Elisângela Silva Dias</h5>
+                    <p class="card-text">Professora da UFG. Pesquisa algoritmos, gênero na computação e IA para políticas públicas.</p> -->
+                    <h5 class="card-title mt-2">Elisângela Dias Silva</h5>
+                    <!-- Texto curto (resumo) -->
+                    <p class="card-text" id="resumoElisangela-dias">
+                      Professora no INF/UFG, atua em IA, ciência de dados e inclusão digital.
+                    </p>
+
+                    <!-- Texto completo (escondido por padrão) -->
+                    <p class="card-text" id="completoElisangela-dias" style="display: none;">
+                      Professora associada na Universidade Federal de Goiás. É doutora em Ciência da Computação (2015), pela Universidade Federal de Goiás, na área de Representação de Álgebras e Temas Afins, com tese intitulada "Reconhecimento polinomial de álgebras cluster de tipo finito". Possui mestrado em Ciência da Computação (2010), pela Universidade Federal de Goiás, na área de Algoritmos e Grafos, com dissertação intitulada "Alianças defensivas em grafos". Possui graduação em Sistemas de Informação (2006), pela Universidade Estadual de Goiás. É expert na área de algoritmos, álgebras cluster, grafos e fundamentos da computação. Desde 2018, tem realizado pesquisas com ênfase nos estudos de gênero na Computação e suas tecnologias e também sobre minorias. É vice-coordenadora do curso de Ciência da Computação e vice-coordenadora do Projeto ADAs, coordenadora do Programa ComputAÇÃO HUMANA, coordenadora do Comitê de Mulheres da Associação Nacional de Especialistas em TI (ANETI) e desenvolve as ações de ensino, pesquisa e extensão voltadas para a popularização da Ciência da Computação. É presidente do Instituto AIA e, recentemente, têm desenvolvido soluções em IA para Educação, Saúde e Políticas Públicas. 
+                    </p>
+
+                    <!-- Botão de alternância -->
+                    <a href="#" class="text-primary" onclick="alternarTexto('resumoElisangela-dias', 'completoElisangela-dias', this); return false;">[+]</a>
                   </div>
                 </div>
               </div>
@@ -255,8 +363,22 @@
                 <div class="card h-100">
                   <div class="card-body">
                     <img src="img/fotos/osvaldo-fabiano.jpg" class="rounded mx-auto d-block palestrante-img" alt="Osvaldo Fabiano Júnior">
+                    <!-- <h5 class="card-title mt-2">Osvaldo Fabiano Júnior</h5>
+                    <p class="card-text">Ativista social, atua em IA, políticas públicas e economia solidária.</p> -->
                     <h5 class="card-title mt-2">Osvaldo Fabiano Júnior</h5>
-                    <p class="card-text">Ativista social, atua em IA, políticas públicas e economia solidária.</p>
+
+                    <!-- Texto curto (resumo) -->
+                    <p class="card-text" id="resumoOsvaldo-swami">
+                      Dirigente no Instituto Swami e coordenador de políticas pública na Agehab-GO, trabalha com IA aplicada à gestão pública.
+                    </p>
+                    
+                    <!-- Texto completo (escondido por padrão) -->
+                    <p class="card-text" id="completoOsvaldo-swami" style="display: none;">
+                      Ativista social, economista de formação, especializado em economia de empresas, atua com estatísticas sociais, terceiro setor e políticas públicas há mais de 20 anos e considera que a inteligência artificial, a internet, o aprendizado de máquina, a matemática e a estatística são ferramentas que combinadas decidirão os rumos das políticas públicas nos próximos anos. Dirigente do Instituto Swami desde 2013 incubou e assessorou várias dezenas de cooperativas, associações e institutos sociais, culturais e ambientais, com destaques para a Recicla CooperLuz em Luziânia, cooperativa de catadores de recicláveis; Agape Medicinal, primeira associação de cannabis medicinal da Região, fundada em 2017; e Instituto AIA, que é a materialização de tudo o que acreditamos em termos de pesquisa, propósitos, escalabilidade e ativismo social. Líder de Projetos na Emater de 2020 a 2023 foi responsável pela pesquisa, elaboração e desenvolvimento da metodologia do Balanço Social que avalia o retorno para a sociedade por cada R$1,00 investido nas atividades fim da Emater em favor da agricultura familiar. Na Agehab, como coordenador de políticas públicas, promove a modelagem da engenharia, arquitetura, desenvolvimento e implantação de um núcleo de i.a. para otimizar as políticas públicas e tomadas de decisão. Atuação também como interlocutor com outros órgãos, sociedade civil, academia e institutos de pesquisa, em favor de conectar esses vários agentes aos projetos sociais que se fazem necessários e tem alto potencial de impacto. Aplicação de inteligência artificial, big data, machine learning e segurança de dados com a Metodologia Z-Inspection para desenvolvimento de políticas públicas sociais. Conselheiro da Secretaria Municipal de Cultura de Goiânia por dois mandatos (2018-2020), parecerista em projetos de captação de recursos, editais e prestações de contas. Idealizador da Cidadania Plena Rede de Economia Solidária, que conecta movimentos sociais com autogestão e independência, promovendo eventos e soluções para transformar realidades.
+                    </p>
+                    
+                    <!-- Botão de alternância -->
+                    <a href="#" class="text-primary" onclick="alternarTexto('resumoOsvaldo-swami', 'completoOsvaldo-swami', this); return false;">[+]</a>
                   </div>
                 </div>
               </div>
@@ -264,8 +386,23 @@
                 <div class="card h-100">
                   <div class="card-body">
                     <img src="img/fotos/eduardo-noronha.jpg" class="rounded mx-auto d-block palestrante-img" alt="Eduardo Noronha">
+                    <!-- <h5 class="card-title mt-2">Eduardo Noronha</h5>
+                    <p class="card-text">Professor do IFG. Pesquisa IA aplicada à pecuária de precisão, saúde e políticas públicas.</p> -->
                     <h5 class="card-title mt-2">Eduardo Noronha</h5>
-                    <p class="card-text">Professor do IFG. Pesquisa IA aplicada à pecuária de precisão, saúde e políticas públicas.</p>
+                    <!-- Texto curto (resumo) -->
+                    <p class="card-text" id="resumoEduardo-noronha">
+                      Professor no IFG e pesquisador na Embrapii, com foco em impactos sociais da tecnologia e inovação.
+                    </p>
+
+                    <!-- Texto completo (escondido por padrão) -->
+                    <p class="card-text" id="completoEduardo-noronha" style="display: none;">
+                      Bacharel em Computação, Especialista em Qualidade de Software, Mestre em Engenharia da Computação (UFG), Doutor  em Computação (UFG/ Georgia Tech - EUA), e Pós-Doutorado na University of Wisconsin-Madison EUA, com ênfase em Pecuária de Precisão com IA.
+Ao longo de sua carreira integrou com virtude academia e a indústria, desenvolvendo vários projetos de alto impacto em áreas estratégicas da sociedade tais como Saúde, Segurança Pública, Finanças, Esporte e Agronegócio. Recentemente, tem se dedicado com excelência à Pecuária de Precisão, desenvolvendo soluções disruptivas que democratizam tecnologias para o campo no Brasil e no mundo. 
+Especialista no desenvolvimento de lideranças, com atuação e coordenação em importantes projetos como o Latin-America Practices and Soft Skills for an Innovation Oriented Network Program (LAPASSION), Células Empreendedoras (MEC). Desde 2010 é professor e pesquisador no IFG, tendo atuado como Gerente de Planejamento de Negócios da unidade Embrapii-IFG, e é idealizador e coordenador da Pós-Graduação em Inteligência Artificial Aplicada (IFG). Em 2025 recebeu do Estado de Goiás a prêmiação de Pesquisador Goiano Destaque no Exterior.
+                    </p>
+
+                    <!-- Botão de alternância -->
+                    <a href="#" class="text-primary" onclick="alternarTexto('resumoEduardo-noronha', 'completoEduardo-noronha', this); return false;">[+]</a>
                   </div>
                 </div>
               </div>
@@ -274,7 +411,18 @@
                   <div class="card-body">
                     <img src="img/fotos/jordao-nunes.jpg" class="rounded mx-auto d-block palestrante-img" alt="Jordão Horta Nunes">
                     <h5 class="card-title mt-2">Jordão Horta Nunes</h5>
-                    <p class="card-text">Professor na UFG. Pesquisa trabalho, educação, profissionalismo e redes sociais.</p>
+                    <!-- Texto curto (resumo) -->
+                    <p class="card-text" id="resumoJordao-nunes">
+                      Professor na UFG. Pesquisa trabalho, educação, profissionalismo e redes sociais.
+                    </p>
+                    
+                    <!-- Texto completo (escondido por padrão) -->
+                    <p class="card-text" id="completoJordao-nunes" style="display: none;">
+                      Professor da Faculdade de Ciências Sociais da Universidade Federal de Goiás (UFG) , com experiência nas áreas de Metodologia das Ciências Sociais e Sociologias do Trabalho e da Educação . Graduado em Ciências Sociais pela Universidade Estadual de Campinas (UNICAMP), é doutor em Sociologia pela Universidade de São Paulo (USP) . Atua na orientação de pesquisas que abordam temas como profissionalismo, trabalho em serviços, identidade, redes sociais, relações étnico-raciais e educação .
+                    </p>
+                    
+                    <!-- Botão de alternância -->
+                    <a href="#" class="text-primary" onclick="alternarTexto('resumoJordao-nunes', 'completoJordao-nunes', this); return false;">[+]</a>
                   </div>
                 </div>
               </div>

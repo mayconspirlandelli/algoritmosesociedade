@@ -42,14 +42,18 @@
 //Funçao para  Mostrar ou esconder o botão ao rolar a página
   
  
+// Função para alternar entre texto resumido e completo
+function alternarTexto(idResumo, idCompleto, el) {
+  const resumo = document.getElementById(idResumo);
+  const completo = document.getElementById(idCompleto);
 
-function toggleTexto(id, el) {
-  const texto = document.getElementById(id);
-  if (texto.style.display === "none") {
-    texto.style.display = "block";
+  if (resumo.style.display !== "none") {
+    resumo.style.display = "none";
+    completo.style.display = "block";
     el.innerText = "[-]";
   } else {
-    texto.style.display = "none";
+    resumo.style.display = "block";
+    completo.style.display = "none";
     el.innerText = "[+]";
   }
 }
