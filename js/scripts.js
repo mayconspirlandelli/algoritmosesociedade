@@ -41,4 +41,15 @@
   } 
 //Funçao para  Mostrar ou esconder o botão ao rolar a página
   
-  
+ 
+
+function toggleTexto(id, el) {
+  const texto = document.getElementById(id);
+  if (texto.style.display === "none") {
+    texto.style.display = "block";
+    el.innerText = "[-]";
+  } else {
+    texto.style.display = "none";
+    el.innerText = "[+]";
+  }
+}

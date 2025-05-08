@@ -76,7 +76,6 @@
   }
 
   #btnTopo{
-    /* style="position: fixed; bottom: 30px; right: 50px; z-index: 1050; color: #003f5c;" */
     position: fixed;
     bottom: 30px;
     right: 50px;
