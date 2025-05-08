@@ -8,6 +8,7 @@
     --cor-fundo-inscricoes: #b0ba93;
     --cor-texto-invertido: #ffffff;
     --fonte-principal: 'Montserrat', sans-serif;
+    --cor-botao-topo: #000000;
   }
   
   /* Estilos gerais */
@@ -50,7 +51,7 @@
     background-color: var(--cor-fundo-claro);
   }
   
-  .inscricoes, .contagem  {
+  .inscricoes, .contagem, .ficha-tecnica {
     background-color: var(--cor-fundo-inscricoes);
   }
   
@@ -72,4 +73,14 @@
   .programacao li {
     margin-bottom: 10px;
     
+  }
+
+  #btnTopo{
+    /* style="position: fixed; bottom: 30px; right: 50px; z-index: 1050; color: #003f5c;" */
+    position: fixed;
+    bottom: 30px;
+    right: 50px;
+    z-index: 1050;
+    color: var(--cor-botao-topo);
+
   }
