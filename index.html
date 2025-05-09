@@ -104,7 +104,7 @@
               <div class="card h-100 shadow">
                 <div class="card-body">
                   <h5 class="card-title">Participantes</h5>
-                  <p class="card-text">Inscreva-se como participante para acompanhar palestras, oficinas e mesas-redondas do evento.</p>
+                  <p class="card-text">Inscreva-se como participante para acompanhar as palestras e mesas-redondas do evento. Apenas os inscritos receberão certificado de participação.</p>
                   <a href="#form-participantes" class="btn btn-primary" style="background-color: #003f5c; border-color: #003f5c;">Inscrição Participantes</a>
                 </div>
               </div>
@@ -265,12 +265,12 @@
                     <img src="img/fotos/frederico-rocha.jpg" class="rounded mx-auto d-block palestrante-img" alt="Frederico Henrique Rocha">
                     <h5 class="card-title mt-2">
                       <a href="http://lattes.cnpq.br/1302672594359721" target="_blank" style="text-decoration: none; color: inherit;">
-                        Frederico Henrique G. C. da Rocha 
+                        Frederico Henrique Rocha 
                       </a>
                     </h5>
                     <!-- Texto curto (resumo) -->
                     <p class="card-text" id="resumoFrederico-rocha">
-                      Professor da UFG. Professor da UFG. Atua em sociologia da educação e políticas públicas.
+                      Professor Permanent do PPGS/UFG. Realiza pesquisas em sociologia da educação e políticas públicas.
                     </p>
 
                     <!-- Texto completo (escondido por padrão) -->
@@ -468,6 +468,31 @@ Especialista no desenvolvimento de lideranças, com atuação e coordenação em
             </div>
           </div>
   
+          <!-- Slide 5 -->
+          <div class="carousel-item">
+            <div class="row">
+              <div class="col-md-4 mb-4">
+                <div class="card h-100">
+                  <div class="card-body">
+                    <img src="img/fotos/eric-araujo.jpg" class="rounded mx-auto d-block palestrante-img" alt="Eric Araújo">
+                    <h5 class="card-title mt-2">Eric Araújo</h5>
+                    <!-- Texto curto (resumo) -->
+                    <p class="card-text" id="resumoEric-araujo">
+                      Professor na Calvin University (EUA), pesquisa modelagem baseada em agentes e contágio social de comportamentos e opiniões.
+                    </p>
+                    
+                    <!-- Texto completo (escondido por padrão) -->
+                    <p class="card-text" id="completoEric-araujo" style="display: none;">
+                      Professor do Departamento de Ciência da Computação da Calvin University, nos EUA, e pesquisador na área de modelagem baseada em agentes para a construção de modelos cognitivos. Seu trabalho se encontra em grande parte no estudo de fenômenos de contágio social de comportamentos, opiniões e percepções. Eric fez seu doutorado na Universidade Livre de Amsterdã, e vem desenvolvendo modelos e reflexões sobre aspectos importantes para o florescimento da sociedade.
+                    </p>
+                    
+                    <!-- Botão de alternância -->
+                    <a href="#" class="text-primary" onclick="alternarTexto('resumoEric-araujo', 'completoEric-araujo', this); return false;">[+]</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>  
         </div>
         <button class="carousel-control-prev" type="button" data-bs-target="#carouselPalestrantes" data-bs-slide="prev">
           <span class="carousel-control-prev-icon" aria-hidden="true"></span>
@@ -511,7 +536,7 @@ Especialista no desenvolvimento de lideranças, com atuação e coordenação em
         <li><strong>09:00 – 09:30</strong> Abertura Oficial e Discursos Institucionais</li>
         <li><strong>09:30 – 10:20</strong><strong class="text-warning">  Palestra 1: “Inteligência Artificial na Tomada de Decisões Públicas: Promessas e Perigos” - Fernando Filgueiras [UFG/MEC]</strong></li>
         <li><strong>10:20 – 11:10</strong><strong class="text-warning"> Palestra 2: “Métricas de Equidade em Aprendizado de Máquina e seus Fundamentos Éticos e Políticos” -  Fernando Pasquini [Calvin-USA]</strong></li>
-        <li><strong>11:10 – 12:00</strong> Debatedores: Fábio Moreira Costa [PPGCC/INF/UFG] e Frederico Rocha [PPGS/FCS/UFG]</li>
+        <li><strong>11:10 – 12:00</strong><strong> Debatedores: </strong> Fábio Moreira Costa [PPGCC/INF/UFG] e Frederico Rocha [PPGS/FCS/UFG]</li>
       </ul>
     </div>
 
@@ -545,8 +570,9 @@ Especialista no desenvolvimento de lideranças, com atuação e coordenação em
       <h5 class="text-white mb-3">Noite</h5>
       <ul class="text-white">
         <li><strong>18:30 – 19:00</strong> Welcome Coffee no noturno</li>
-        <li><strong class="fs-5">19:00 – 21:00</strong> <strong class="text-warning">Mesa-Redonda 2: “Algoritmos, tecnologia e sociedade: controle e impactos sociais” (Luiz Adriano Borges [UTFPR], Elisângela Silva Dias [INF/UFG], Osvaldo Fabiano Swami [Instituto AIA/Agehab-Goiás]) </strong>
-        <br><strong>Mediação:</strong> Jordão Horta Nunes [PPGS/FCS/UFG] e Jacson Rodrigues Barbosa [INF/UFG]</li>
+        <li><strong>19:00 – 21:00</strong> <strong class="text-warning">Mesa-Redonda 2: “Algoritmos, tecnologia e sociedade: controle e impactos sociais” (Luiz Adriano Borges [UTFPR], Elisângela Silva Dias [INF/UFG], Osvaldo Fabiano Swami [Instituto AIA/Agehab-Goiás]) </strong>
+        <br><strong>Coordenação:</strong> Jordão Horta Nunes [PPGS/FCS/UFG]
+        <br><strong>Debatedor:</strong> Jacson Rodrigues Barbosa [INF/UFG]</li>
         <li><strong>21:00 – 21:30</strong> Encerramento Oficial</li>
       </ul>
     </div>
@@ -572,15 +598,15 @@ Especialista no desenvolvimento de lideranças, com atuação e coordenação em
                   <img class="img-fluid w-25" src="img/logo-funape.svg" alt="">
               </div>
 
-              <div class="ficha-comissao-organizadora my-5">
+              <div class="ficha-comissao-organizadora my-4">
                   <h4>COMISSÃO ORGANIZADORA</h4>
-                          <strong>Frederico Henrique Galves Coelho da Rocha</strong>
-                          <br>Faculdade de Ciências Sociais (FCS/UFG)</small>
-                          <br>
-                          <strong>Fábio Moreira Costa</strong>
-                          <br>Instituto de Informática (INF/UFG) e Instituto Apoema (INF/UFG)</small>
-                  
-                  <br>
+                      <p>Frederico Henrique G. C. da Rocha - FCS (coordenador)</p>
+                      <p>Jordão Horta Nunes - FCS</p>
+                      <p>Fabio Moreira Costa - INF (vice-coordenador)</p>
+                      <p>Jacson Rodrigues Barbosa - INF</p>
+                      <p>Hugo do Nascimento Dantas - INF</p>
+                      <p>Eliomar Araújo de Lima - INF</p>
+                      <p>Elisângela Silva Dias - INF</p>              
               </div>
           </div>
       </div>
