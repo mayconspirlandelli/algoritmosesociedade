@@ -1,78 +1,155 @@
 /* Cores e fonte principais */
 :root {
-    --cor-primaria: #003f5c;
-    --cor-secundaria: #faf9f4;
-    --cor-texto: #003f5c;
-    --cor-fundo-programacao: #003f5c;
-    --cor-fundo-claro: #faf9f4;
-    --cor-fundo-inscricoes: #b0ba93;
-    --cor-texto-invertido: #ffffff;
-    --fonte-principal: 'Montserrat', sans-serif;
-    --cor-botao-topo: #000000;
-  }
+  --primary: #004aad;
+  --primary-dark: #1E2E7A;
+  --secondary: #BFAED8;
+  --secondary-light: #C8B5E4;
+  --background: #FFFEF3;
+  --text: #2C2C3A;
+  --text-light: #8B8B9C;
+
+  --cor-primaria: var(--primary);
+  --cor-secundaria: var(--background);
+  --cor-texto: var(--text);
+  --cor-fundo-programacao: var(--primary-dark);
+  --cor-fundo-claro: var(--background);
+  --cor-fundo-inscricoes: var(--secondary);
+  --cor-texto-invertido: #ffffff;
+  --fonte-principal: 'Montserrat', sans-serif;
+  --cor-botao-topo: var(--secondary-light);
+}
   
-  /* Estilos gerais */
-  body {
-    background-color: var(--cor-secundaria);
-    font-family: var(--fonte-principal);
-    color: var(--cor-texto);
-    font-size: 18px;
-    text-align: justify;
-  }
-  
-  .nav-custom {
-    font-size: 18px;
-    font-weight: bold;
-    color: var(--cor-primaria);
-    background-color: var(--cor-texto-invertido);
-  }
-  
-  /* Centralização de títulos */
-  h3, h4, h5 {
-    text-align: center;
-    color: var(--cor-primaria);
-  }
-  
-  /* Seções com padding padrão */
-  section {
-    padding: 60px 0;
-  }
-  
-  /* Seções específicas */
-  .apresentacao p,
-  .palestrantes,
-  .inscricoes,
-  .programacao, .contagem {
-    font-size: 18px;
-  }
-  
-  /* Fundo e cor de texto por seção */
-  .palestrantes {
-    background-color: var(--cor-fundo-claro);
-  }
-  
-  .inscricoes, .contagem, .ficha-tecnica {
-    background-color: var(--cor-fundo-inscricoes);
-  }
-  
-  .programacao {
-    background-color: var(--cor-fundo-programacao);
-    color: var(--cor-texto-invertido);
-  }
-  
-  .card-text {
-    font-size: 14px;
-  }
+body {
+  background-color: var(--background);
+  color: var(--text);
+  font-family: var(--fonte-principal);
+  font-size: 18px;
+  text-align: justify;
+}
+
+/* Navbar */
+.navbar {
+  background-color: var(--primary);
+}
+
+.navbar .nav-link {
+  color: white !important;
+  font-weight: 600;
+}
+
+.navbar .nav-link:hover {
+  color: var(--secondary-light) !important;
+}
+
+.nav-custom {
+  font-size: 18px;
+  font-weight: bold;
+  background-color: var(--primary);
+  color: white;
+}
+
+/* Hero */
+.hero {
+  background: linear-gradient(135deg, #004aad 0%, #6A5ACD 50%, #BFAED8 100%);
+  color: white;
+  padding: 120px 0;
+}
+
+h1, h2, h3, h4, h5 {
+  text-align: center;
+  color: var(--primary-dark);
+  font-weight: 700;
+}
+section {
+  padding: 60px 0;
+}
+
+.apresentacao p,
+.palestrantes,
+.inscricoes,
+.programacao,
+.contagem {
+  font-size: 18px;
+}
+
+/* Botões */
+.btn-evento {
+  background-color: var(--secondary);
+  color: white;
+  border: none;
+  border-radius: 8px;
+  padding: 12px 28px;
+  font-weight: 600;
+  transition: .3s;
+}
+
+.btn-evento:hover {
+  background-color: var(--primary);
+  color: white;
+}
+
+/* Cards */
+.card {
+  background: white;
+  border: none;
+  border-radius: 16px;
+  box-shadow: 0 8px 20px rgba(0,0,0,.08);
+}
+
+.card-title {
+  color: var(--primary-dark);
+}
+
+.card-text {
+  font-size: 14px;
+}
+
+.palestrantes {
+  background-color: var(--background);
+}
+
+.inscricoes,
+.contagem,
+.ficha-tecnica {
+  background-color: var(--secondary);
+}
+
+/* Seção Programação */
+.programacao {
+  background-color: var(--primary-dark);
+  color: white;
+}
+
+.programacao h4 {
+  color: var(--secondary-light);
+}
 
   .palestrante-img {
-    height: 350px; /* defina a altura desejada */
-    object-fit: cover; /* recorta para caber no espaço mantendo proporção */
-    width: 100%; /* ocupa toda a largura do card */
+    height: 350px;
+    object-fit: cover;
+    width: 100%;
   }
 
   .programacao li {
     margin-bottom: 10px;
-    
+  }
+
+  /* Contagem Regressiva */
+  .contagem {
+    background: linear-gradient(135deg, #BFAED8, #004aad);
+    color: white;
+  }
+
+  .contagem .numero {
+    font-size: 4rem;
+    font-weight: 700;
+    color: white;
+  }
+
+  /* Rodapé */
+  footer {
+    background-color: var(--primary-dark);
+    color: white;
   }
 
   #btnTopo{
@@ -81,5 +158,14 @@
     right: 50px;
     z-index: 1050;
     color: var(--cor-botao-topo);
-
   }
+
+/* Classe para imagens full-bleed (ocupar toda largura da janela) */
+.full-bleed {
+  display: block;
+  width: 100vw;
+  max-width: 100vw;
+  margin-left: calc(50% - 50vw);
+  margin-right: calc(50% - 50vw);
+  height: auto;
+}

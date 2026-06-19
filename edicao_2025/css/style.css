@@ -1,0 +1,85 @@
+/* Cores e fonte principais */
+:root {
+    --cor-primaria: #003f5c;
+    --cor-secundaria: #faf9f4;
+    --cor-texto: #003f5c;
+    --cor-fundo-programacao: #003f5c;
+    --cor-fundo-claro: #faf9f4;
+    --cor-fundo-inscricoes: #b0ba93;
+    --cor-texto-invertido: #ffffff;
+    --fonte-principal: 'Montserrat', sans-serif;
+    --cor-botao-topo: #000000;
+  }
+  
+  /* Estilos gerais */
+  body {
+    background-color: var(--cor-secundaria);
+    font-family: var(--fonte-principal);
+    color: var(--cor-texto);
+    font-size: 18px;
+    text-align: justify;
+  }
+  
+  .nav-custom {
+    font-size: 18px;
+    font-weight: bold;
+    color: var(--cor-primaria);
+    background-color: var(--cor-texto-invertido);
+  }
+  
+  /* Centralização de títulos */
+  h3, h4, h5 {
+    text-align: center;
+    color: var(--cor-primaria);
+  }
+  
+  /* Seções com padding padrão */
+  section {
+    padding: 60px 0;
+  }
+  
+  /* Seções específicas */
+  .apresentacao p,
+  .palestrantes,
+  .inscricoes,
+  .programacao, .contagem {
+    font-size: 18px;
+  }
+  
+  /* Fundo e cor de texto por seção */
+  .palestrantes {
+    background-color: var(--cor-fundo-claro);
+  }
+  
+  .inscricoes, .contagem, .ficha-tecnica {
+    background-color: var(--cor-fundo-inscricoes);
+  }
+  
+  .programacao {
+    background-color: var(--cor-fundo-programacao);
+    color: var(--cor-texto-invertido);
+  }
+  
+  .card-text {
+    font-size: 14px;
+  }
+
+  .palestrante-img {
+    height: 350px; /* defina a altura desejada */
+    object-fit: cover; /* recorta para caber no espaço mantendo proporção */
+    width: 100%; /* ocupa toda a largura do card */
+  }
+
+  .programacao li {
+    margin-bottom: 10px;
+    
+  }
+
+  #btnTopo{
+    position: fixed;
+    bottom: 30px;
+    right: 50px;
+    z-index: 1050;
+    color: var(--cor-botao-topo);
+
+  }
