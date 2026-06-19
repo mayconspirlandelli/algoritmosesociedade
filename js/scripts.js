@@ -57,3 +57,33 @@ function alternarTexto(idResumo, idCompleto, el) {
     el.innerText = "[+]";
   }
 }
+
+
+// ======= Menu fixo: adiciona sombra ao rolar a página =======
+window.addEventListener('scroll', function () {
+    const nav = document.querySelector('.nav-custom');
+    if (nav) {
+        if (window.scrollY > 10) {
+            nav.classList.add('scrolled');
+        } else {
+            nav.classList.remove('scrolled');
+        }
+    }
+});
+ 
+// ======= Alterna entre resumo e texto completo dos palestrantes =======
+function alternarTexto(idResumo, idCompleto, link) {
+    const resumo = document.getElementById(idResumo);
+    const completo = document.getElementById(idCompleto);
+ 
+    if (completo.style.display === 'none') {
+        resumo.style.display = 'none';
+        completo.style.display = 'block';
+        link.textContent = '[-]';
+    } else {
+        resumo.style.display = 'block';
+        completo.style.display = 'none';
+        link.textContent = '[+]';
+    }
+}
+ 
